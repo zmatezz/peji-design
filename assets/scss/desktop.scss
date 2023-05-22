@@ -1,0 +1,65 @@
+@media only screen and (min-width: 991px) {
+  .container {
+    position: relative;
+    width: 530px;
+    height: 530px;
+  }
+
+  .square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140px;
+    height: 140px;
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 8px;
+  }
+
+  .rectangle {
+    position: absolute;
+    background-color: red;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .top-left {
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 350px;
+    writing-mode: vertical-rl;
+  }
+
+  .top-right {
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 120px;
+  }
+
+  .bottom-left {
+    bottom: 0;
+    left: 0;
+    width: 350px;
+    height: 120px;
+  }
+
+  .bottom-right {
+    width: 120px;
+    height: 350px;
+    bottom: 0;
+    right: 0;
+    writing-mode: vertical-rl;
+  }
+}

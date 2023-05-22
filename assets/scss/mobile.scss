@@ -1,0 +1,44 @@
+section {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.container {
+  height: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 8px;
+}
+
+.rectangle {
+  background-color: red;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+
+  width: 320px;
+  height: 100px;
+}
+
