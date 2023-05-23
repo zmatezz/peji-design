@@ -1,5 +1,5 @@
-const commonOptions = {
-  duration: 2200,
+/*const commonOptions = {
+  duration: 1200,
   easing: 'ease-in-out',
 };
 
@@ -20,14 +20,31 @@ const revealOptionsLargeScreen = [
   { selector: ".square" },
 ];
 
-const sr = ScrollReveal({ reset: true });
+ScrollReveal.default({ reset: true });
 
 revealOptions.forEach((options) => {
-  sr.reveal(options.selector, { ...commonOptions, ...options });
+  ScrollReveal().reveal(options.selector, { ...commonOptions, ...options });
 });
 
 if (window.innerWidth >= 991) {
   revealOptionsLargeScreen.forEach((options) => {
-    sr.reveal(options.selector, { ...commonOptions, ...options });
+    ScrollReveal().reveal(options.selector, { ...commonOptions, ...options });
   });
 }
+*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  const square = document.querySelector(".square");
+  const rectangles = document.querySelectorAll(".rectangle");
+
+  rectangles.forEach(rectangle => {
+    rectangle.style.display = "none"; // Oculta as divs rectangle
+  });
+
+  square.addEventListener("click", function () {
+    rectangles.forEach(rectangle => {
+      rectangle.style.display = "flex"; // Torna as divs rectangle visíveis
+    });
+
+  });
+});
