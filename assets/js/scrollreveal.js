@@ -1,15 +1,63 @@
-/*const commonOptions = {
-  duration: 1200,
+/* Mobile */
+const square = document.querySelector('.square');
+const topLeftRectangle = document.querySelector('.top-left');
+const topRightRectangle = document.querySelector('.top-right');
+const bottomLeftRectangle = document.querySelector('.bottom-left');
+const bottomRightRectangle = document.querySelector('.bottom-right');
+
+let isEffectActive = false;
+
+function activateEffect() {
+  if (window.innerWidth < 991) {
+    if (!isEffectActive) {
+      // Ativa o efeito apenas se não estiver ativo
+      topLeftRectangle.style.display = 'block';
+      topRightRectangle.style.display = 'block';
+      bottomLeftRectangle.style.display = 'block';
+      bottomRightRectangle.style.display = 'block';
+      topLeftRectangle.style.transform = 'translateX(-400px)';
+      topRightRectangle.style.transform = 'translateX(400px)';
+      bottomLeftRectangle.style.transform = 'translateX(-400px)';
+      bottomRightRectangle.style.transform = 'translateX(400px)';
+      topLeftRectangle.style.transition = 'transform 0.8s ease-in-out';
+      topRightRectangle.style.transition = 'transform 0.8s ease-in-out';
+      bottomLeftRectangle.style.transition = 'transform 0.8s ease-in-out';
+      bottomRightRectangle.style.transition = 'transform 0.8s ease-in-out';
+
+      // Força um repaint antes de aplicar as transformações
+      square.getBoundingClientRect();
+
+      topLeftRectangle.style.transform = 'translateX(0)';
+      topRightRectangle.style.transform = 'translateX(0)';
+      bottomLeftRectangle.style.transform = 'translateX(0)';
+      bottomRightRectangle.style.transform = 'translateX(0)';
+
+      isEffectActive = true;
+    } else {
+      // Desativa o efeito apenas se estiver ativo
+      topLeftRectangle.style.transform = 'translateX(-400px)';
+      topRightRectangle.style.transform = 'translateX(400px)';
+      bottomLeftRectangle.style.transform = 'translateX(-400px)';
+      bottomRightRectangle.style.transform = 'translateX(400px)';
+      setTimeout(function() {
+        topLeftRectangle.style.display = 'none';
+        topRightRectangle.style.display = 'none';
+        bottomLeftRectangle.style.display = 'none';
+        bottomRightRectangle.style.display = 'none';
+        isEffectActive = false;
+      }, 600);
+    }
+  }
+}
+
+square.addEventListener('click', activateEffect);
+square.addEventListener('touchstart', activateEffect);
+
+/* Desktop */
+const commonOptions = {
+  duration: 2200,
   easing: 'ease-in-out',
 };
-
-const revealOptions = [
-  { selector: ".square" },
-  { selector: ".top-left", origin: "left", distance: "200px" },
-  { selector: ".top-right", origin: "right", distance: "200px" },
-  { selector: ".bottom-left", origin: "left", distance: "200px" },
-  { selector: ".bottom-right", origin: "right", distance: "200px" },
-];
 
 const revealOptionsLargeScreen = [
   { selector: ".top-left", origin: "left", distance: "100px" },
@@ -20,31 +68,16 @@ const revealOptionsLargeScreen = [
   { selector: ".square" },
 ];
 
-ScrollReveal.default({ reset: true });
-
-revealOptions.forEach((options) => {
-  ScrollReveal().reveal(options.selector, { ...commonOptions, ...options });
-});
+const sr = ScrollReveal({ reset: true });
 
 if (window.innerWidth >= 991) {
   revealOptionsLargeScreen.forEach((options) => {
-    ScrollReveal().reveal(options.selector, { ...commonOptions, ...options });
+    sr.reveal(options.selector, { ...commonOptions, ...options });
   });
 }
-*/
 
-document.addEventListener("DOMContentLoaded", function () {
-  const square = document.querySelector(".square");
-  const rectangles = document.querySelectorAll(".rectangle");
 
-  rectangles.forEach(rectangle => {
-    rectangle.style.display = "none"; // Oculta as divs rectangle
-  });
-
-  square.addEventListener("click", function () {
-    rectangles.forEach(rectangle => {
-      rectangle.style.display = "flex"; // Torna as divs rectangle visíveis
-    });
-
-  });
+window.addEventListener("load", function() {
+  var redesDiv = document.querySelector(".redes");
+  redesDiv.classList.add("fade-in");
 });

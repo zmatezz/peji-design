@@ -7,45 +7,167 @@
 }
 
 /* Components*/
-section {
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+@media only screen and (max-width: 991px) {
+  section {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .redes .instagram {
+    width: 40px;
+    height: 40px;
+  }
+  .redes .linkedin {
+    width: 50px;
+    height: 50px;
+  }
+  .container {
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+    top: 20px;
+  }
+  .container .square {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 8px;
+  }
+  .container .rectangle {
+    display: none;
+    background-color: red;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    width: 320px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px; /* Adicione essa linha */
+  }
+  .top-left {
+    align-self: flex-start;
+  }
+  .top-right {
+    align-self: flex-end;
+  }
 }
-
-.container {
-  height: 600px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  gap: 20px;
-}
-.container .square {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  color: white;
-  font-size: 30px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  border-radius: 8px;
-}
-.container .rectangle {
-  display: none;
-  background-color: red;
-  border-radius: 20px;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  width: 320px;
-  height: 100px;
+/* Desktop */
+@media only screen and (min-width: 991px) {
+  section {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    position: relative;
+    width: 530px;
+    height: 530px;
+  }
+  .redes {
+    transform: translateY(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .redes .instagram {
+    width: 40px;
+    height: 40px;
+  }
+  .redes .linkedin {
+    width: 50px;
+    height: 50px;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .redes.fade-in {
+    animation: fadeIn 5s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+  }
+  .square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140px;
+    height: 140px;
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 8px;
+  }
+  .rectangle {
+    position: absolute;
+    background-color: red;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .top-left {
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 350px;
+    writing-mode: vertical-rl;
+  }
+  .top-right {
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 120px;
+  }
+  .bottom-left {
+    bottom: 0;
+    left: 0;
+    width: 350px;
+    height: 120px;
+  }
+  .bottom-right {
+    width: 120px;
+    height: 350px;
+    bottom: 0;
+    right: 0;
+    writing-mode: vertical-rl;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
