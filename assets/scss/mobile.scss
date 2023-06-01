@@ -47,6 +47,7 @@ section {
   }
 
   .rectangle {
+    
     display: none;
     background-color: red;
     border-radius: 20px;
@@ -80,8 +81,13 @@ section {
     display: flex;
     flex-direction: column;
   }
+  .rectangle a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
 
   .container {
+    
     position: relative;
     width: 530px;
     height: 530px;

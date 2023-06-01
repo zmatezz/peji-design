@@ -1,0 +1,22 @@
+.scroll-container {
+  width: 100%;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.scroll-content {
+  display: inline-block;
+}
+
+.projetos {
+  display: flex;
+}
+
+.projeto1 {
+  margin-right: 10px;
+}
+
+.projeto1 img{
+  width: 500px;
+  height: 500px;
+}
