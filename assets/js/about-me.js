@@ -11,7 +11,7 @@ $(document).ready(function() {
   var scrollLeft = 0;
   var isDragging = false;
 
-  $(".scroll-container").on("mousedown", function(e) {
+  $(".container-projetos").on("mousedown", function(e) {
     e.preventDefault();
     isDragging = true;
     startX = e.pageX - $(this).offset().left;

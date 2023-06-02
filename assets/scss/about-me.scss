@@ -8,16 +8,11 @@
 }
 
 :root{
-  --bg-color: #222327;
-  --text-color: #fff;
+  --text-color: #000000;
   --main-color: #29fd53;
 }
 
-body{
-  min-height: 100vh;
-  background: var(--bg-color);
-  color: var(--text-color);
-}
+
 
 header{
   position: fixed;
