@@ -7,6 +7,43 @@
 }
 
 /* Components*/
+#services-tp {
+  width: 100%;
+  position: relative;
+}
+
+.container-tp {
+  padding: 20px;
+  position: relative;
+  margin-top: 80px;
+}
+
+.stptext-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.stptext-tl {
+  position: relative;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.stptext-tl p {
+  text-align: center;
+  font-size: 30px;
+}
+
+.stptext-tr {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ctp-2 {
+  background: #000;
+  color: white;
+}
+
 #projects {
   width: 100%;
   position: relative;
@@ -25,7 +62,6 @@
 
 .projetos {
   width: 100%;
-  background-color: aqua;
   padding: 0 20px;
   gap: 20px;
   display: flex;
