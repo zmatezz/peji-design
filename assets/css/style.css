@@ -61,8 +61,50 @@ header.sticky {
   height: 400px;
 }
 
+@media (max-width: 991px) {
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 991px) {
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}
+.about-img img {
+  max-width: 430px;
+  height: auto;
+  width: 100%;
+}
+
+.about-text {
+  text-align: center;
+}
+
+.about-text h2 {
+  font-size: 46px;
+  line-height: 1;
+  text-align: center;
+}
+
+.about-text p {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  padding: 1rem;
+}
+
 button {
-  margin-top: 20px;
+  margin-bottom: 20px;
   position: relative;
   padding: 10px 20px;
   border-radius: 7px;
