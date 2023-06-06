@@ -1,63 +1,73 @@
 #services-tp {
-  width: 100%;
-  position: relative;
+  padding: 100px 15% 120px;
+  background-image: linear-gradient( 92.7deg,  rgba(245,212,212,1) 8.5%, rgba(252,251,224,1) 90.2% );
+}
+
+#about{
+  padding: 100px 15% 120px;
+}
+
+// header
+header.sticky{
+  background: white;
+  border-bottom: 1px solid red;
+  padding: 12px 15%;
 }
 
 .container-tp {
   padding: 20px;
   position: relative;
-  margin-top: 80px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  justify-content: space-around;
 }
 
 .stptext-container {
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 30%;
 }
 
-.img-futura {
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 20px;
-  right: -10px;
-
-  img {
-    height: 400px;
-  }
-}
-
-
-
-.agrupar {
-  justify-content: center;
-  align-items: center;
-}
-
-.stptext-tl {
+.stptext-tl h2{
   font-size: 40px;
   font-weight: 600;
   text-align: center;
-  overflow-wrap: break-word;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+
+  
 }
 
-
-.stptext-tr {
+.stptext-tl p{
   font-size: 20px;
   height: 10%;
-  width: 300px;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  
+  overflow-wrap: break-word;
 
   span {
     font-weight: bold;
   }
 
 }
+
+
+.img-futura {
+
+  img {
+    height: 400px;
+    
+  }
+}
+
+
+
+
+
 
 
 
@@ -75,8 +85,8 @@ button {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
-  background: transparent;
-  color: red;
+  background: rgba(255, 0, 0, 0.716);
+  color: rgb(255, 255, 255);
   overflow: hidden;
   box-shadow: 0 0 0 0 transparent;
   -webkit-transition: all 0.2s ease-in;
@@ -144,6 +154,7 @@ button:active {
 
 .main-text {
   text-align: center;
+  color: white;
 }
 
 span {
@@ -151,7 +162,7 @@ span {
 }
 
 .main-text p {
-  color: red;
+  color: white;
   font-size: 15px;
   margin-bottom: 15px;
 }
@@ -226,4 +237,5 @@ span {
 
 #services {
   padding: 100px 15% 120px;
+  background-image: linear-gradient( 179deg,  rgba(0,0,0,1) 9.2%, rgba(127,16,16,1) 103.9% );
 }
