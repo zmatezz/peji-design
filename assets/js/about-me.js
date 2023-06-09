@@ -36,3 +36,30 @@ window.addEventListener ("scroll", function(){
   header.classList.toggle ("sticky", window.scrollY > 100)
 }
 )
+
+// read
+var readButtons = document.querySelectorAll('.read');
+var boxes = document.querySelectorAll('.box');
+var paragraphs = document.querySelectorAll('.box p');
+var originalTexts = Array.from(paragraphs).map(p => p.textContent);
+var newTexts = [
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+];
+
+readButtons.forEach(function(readButton, index) {
+  readButton.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    if (boxes[index].classList.contains('flip-animation')) {
+      boxes[index].classList.remove('flip-animation');
+      paragraphs[index].textContent = originalTexts[index];
+      readButton.textContent = 'Leia mais';
+    } else {
+      boxes[index].classList.add('flip-animation');
+      paragraphs[index].textContent = newTexts[index];
+      readButton.textContent = 'Ler menos';
+    }
+  });
+});
