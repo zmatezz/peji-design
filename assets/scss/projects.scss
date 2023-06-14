@@ -7,8 +7,11 @@
 .container-projetos {
   width: 100%;
   overflow-x: hidden;
-  white-space: nowrap;
   cursor: grab;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 2rem;
+  
 }
 
 .conteudo-projetos {
