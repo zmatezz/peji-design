@@ -234,7 +234,11 @@ span {
   transition: all .45s ease;
   transform-style: preserve-3d;
   position: relative;
+  max-width: 400px;
+  border: 1px solid black;
+  overflow: hidden;
 }
+
 
 .s-icons i {
   padding: 10px;
@@ -257,6 +261,11 @@ span {
   font-size: 1rem;
   line-height: 1.8;
   margin-bottom: 25px;
+  height: 200px;
+  /* Ajuste a altura conforme necessário */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 .read {
@@ -422,26 +431,27 @@ span {
   margin-bottom: 30px;
 }
 
-.list{
+.list {
   margin-bottom: 2.8 rem;
 }
 
-.list li{
+.list li {
   margin-bottom: 12px;
 }
-.list li a{
+
+.list li a {
   width: auto;
   color: white;
   font-size: 14px;
   transition: all .45s ease;
 }
 
-.list li a:hover{
+.list li a:hover {
   color: red;
   transform: translateX(10px);
 }
 
-.contact-icons i{
+.contact-icons i {
   height: 45px;
   width: 45px;
   background: red;
@@ -455,16 +465,17 @@ span {
   transition: all .45s ease;
 }
 
-.contact-icons i:hover{
+.contact-icons i:hover {
   background: white;
   color: red;
 }
 
-.contact-form form{
+.contact-form form {
   position: relative;
 }
 
-.contact-form form input, form textarea{
+.contact-form form input,
+form textarea {
   width: 100%;
   padding: 14px;
   background: rgb(0, 0, 0);
@@ -476,12 +487,12 @@ span {
   margin-bottom: 10px;
 }
 
-.contact-form textarea{
+.contact-form textarea {
   resize: none;
   height: 240px;
 }
 
-.contact-form .submit{
+.contact-form .submit {
   display: inline-block;
   font-size: 16px;
   background: red;
@@ -490,7 +501,46 @@ span {
   transition: all .45 ease;
 }
 
-.contact-form .submit:hover{
+.contact-form .submit:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
+
+#end {
+  background: #000;
+  position: relative; /* Adicionado */
+}
+
+.end {
+  padding: 20px 15%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative; /* Adicionado */
+}
+
+.last-text p {
+  color: white;
+  font-size: 18px;
+}
+
+.top {
+  position: absolute;
+ 
+  right: 20px;
+  
+  background: red;
+  
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+
+  i{
+    padding: 8px;
+  font-size: 24px;
+    color: white;
+  }
+}
+
