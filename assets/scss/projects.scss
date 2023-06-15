@@ -1,39 +1,7 @@
-#projects{
-  width: 100%;
-  position: relative;
-  
-}
-
-.container-projetos {
-  width: 100%;
-  overflow-x: hidden;
-  cursor: grab;
-  align-items: center;
-  gap: 2.5rem;
-  margin-top: 2rem;
-  
-}
-
-.conteudo-projetos {
-  display: inline-block;
-}
-
-.projetos {
-  width: 100%;
-  padding: 0 20px;
-  gap: 20px;
-  display: flex;
-}
-
-
-
-.projeto1 img{
-  width: 30vw;
-  height: 50vh;
-}
-
-.container-projetos:active {
-  cursor: grabbing;
+#projects {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px 0% 0px;
 }
 
 .containertext {
@@ -72,17 +40,199 @@
   align-self: flex-end;
 }
 
-.texto3{
+
+/* Últimos Projetos */
+#portfolio {
+  background-color: #FF001F;
+  padding: 0px 15% 120px;
+
+  .main-text {
+  text-align: center;
+  color: white;
+
+  p {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  span {
+    color: rgb(0, 0, 0);
+  }
+}
+
+.container-projetos {
+  width: 100%;
+  overflow-x: hidden;
+  cursor: grab;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 2rem;
+
+  .conteudo-projetos:active {
+    cursor: grabbing;
+  }
+
+  .conteudo-projetos {
+    display: inline-block;
+
+    .projetos {
+      width: 100%;
+      padding: 0 20px;
+      gap: 20px;
+      display: flex;
+
+      .row {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.448);
+        border-radius: 8px;
+        height: 400px;
+        width: 400px;
+        background-size: cover;
+
+        img {
+          height: 100%;
+          width: 100%;
+          border-radius: 8px;
+          display: block;
+          transition: transform 0.5s;
+        
+        }
+
+        .layer {
+          width: 100%;
+          height: 0;
+          background: linear-gradient(rgba(0, 0, 0, 0.001), #000);
+          position: absolute;
+          border-radius: 8px;
+          left: 0;
+          bottom: 0;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 0 40px;
+          transition: height 0.5s;
+
+          h5 {
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+          }
+
+          p {
+            color: white;
+            font-size: 1rem;
+            line-height: 1.8rem;
+          }
+
+          i {
+            color: black;
+            margin-top: 20px;
+            font-size: 20px;
+            background: white;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      .row:hover img {
+        transform: scale(1.1);
+      }
+
+      .row:hover .layer {
+        height: 100%;
+      }
+    }
+  }
+}
+}
+
+
+
+
+
+
+
+
+
+.projeto1 img {
+  width: 30vw;
+  height: 50vh;
+}
+
+
+
+
+
+.texto3 {
   width: 80%;
-  align-self: center; 
+  align-self: center;
   text-align: center;
   margin-top: 20px;
   font-size: 28px;
 }
 
-#projects-card{
+#projects-card {
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+
+
+/* Waves */
+.custom-shape-divider-bottom-1686795682 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1686795682 svg {
+  position: relative;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1686795682 .shape-fill {
+  fill: #FF001F;
+}
+
+.custom-shape-divider-top-1686796659 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1686796659 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 225px;
+}
+
+.custom-shape-divider-top-1686796659 .shape-fill {
+  fill: #f0001c;
 }

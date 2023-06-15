@@ -233,37 +233,9 @@ button:active {
   }
 }
 #projects {
-  width: 100%;
-  position: relative;
-}
-
-.container-projetos {
-  width: 100%;
-  overflow-x: hidden;
-  cursor: grab;
-  align-items: center;
-  gap: 2.5rem;
-  margin-top: 2rem;
-}
-
-.conteudo-projetos {
-  display: inline-block;
-}
-
-.projetos {
-  width: 100%;
-  padding: 0 20px;
-  gap: 20px;
-  display: flex;
-}
-
-.projeto1 img {
-  width: 30vw;
-  height: 50vh;
-}
-
-.container-projetos:active {
-  cursor: grabbing;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px 0% 0px;
 }
 
 .containertext {
@@ -302,6 +274,115 @@ button:active {
   align-self: flex-end;
 }
 
+/* Últimos Projetos */
+#portfolio {
+  background-color: #FF001F;
+  padding: 0px 15% 120px;
+}
+#portfolio .main-text {
+  text-align: center;
+  color: white;
+}
+#portfolio .main-text p {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+#portfolio .main-text h2 {
+  font-size: 36px;
+  line-height: 1;
+}
+#portfolio .main-text span {
+  color: rgb(0, 0, 0);
+}
+#portfolio .container-projetos {
+  width: 100%;
+  overflow-x: hidden;
+  cursor: grab;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+#portfolio .container-projetos .conteudo-projetos:active {
+  cursor: grabbing;
+}
+#portfolio .container-projetos .conteudo-projetos {
+  display: inline-block;
+}
+#portfolio .container-projetos .conteudo-projetos .projetos {
+  width: 100%;
+  padding: 0 20px;
+  gap: 20px;
+  display: flex;
+}
+#portfolio .container-projetos .conteudo-projetos .projetos .row {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.448);
+  border-radius: 8px;
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+}
+#portfolio .container-projetos .conteudo-projetos .projetos .row img {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.5s;
+}
+#portfolio .container-projetos .conteudo-projetos .projetos .row .layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.001), #000);
+  position: absolute;
+  border-radius: 8px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 40px;
+  transition: height 0.5s;
+}
+#portfolio .container-projetos .conteudo-projetos .projetos .row .layer h5 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+#portfolio .container-projetos .conteudo-projetos .projetos .row .layer p {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+#portfolio .container-projetos .conteudo-projetos .projetos .row .layer i {
+  color: black;
+  margin-top: 20px;
+  font-size: 20px;
+  background: white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+#portfolio .container-projetos .conteudo-projetos .projetos .row:hover img {
+  transform: scale(1.1);
+}
+#portfolio .container-projetos .conteudo-projetos .projetos .row:hover .layer {
+  height: 100%;
+}
+
+.projeto1 img {
+  width: 30vw;
+  height: 50vh;
+}
+
 .texto3 {
   width: 80%;
   align-self: center;
@@ -315,6 +396,47 @@ button:active {
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+/* Waves */
+.custom-shape-divider-bottom-1686795682 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1686795682 svg {
+  position: relative;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1686795682 .shape-fill {
+  fill: #FF001F;
+}
+
+.custom-shape-divider-top-1686796659 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1686796659 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 225px;
+}
+
+.custom-shape-divider-top-1686796659 .shape-fill {
+  fill: #f0001c;
 }
 
 @media only screen and (max-width: 991px) {
@@ -611,6 +733,13 @@ section {
 
 span {
   color: red;
+}
+
+/* Header */
+header.sticky {
+  background: white;
+  padding: 12px 15%;
+  box-shadow: 0px 3px 8px rgba(255, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */
