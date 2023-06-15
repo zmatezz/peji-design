@@ -2,12 +2,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0px 0% 0px;
+  
 }
 
 .containertext {
   padding: 20px;
   position: relative;
   margin-top: 80px;
+  display: flex;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .texto-container {
@@ -22,8 +27,8 @@
 }
 
 .texto p {
-  text-align: center;
-  font-size: 30px;
+  text-align: start;
+  font-size: 20px;
 }
 
 .texto span {
@@ -39,6 +44,7 @@
   margin-right: 15%;
   align-self: flex-end;
 }
+
 
 
 /* Últimos Projetos */
@@ -161,40 +167,6 @@
   }
 }
 }
-
-
-
-
-
-
-
-
-
-.projeto1 img {
-  width: 30vw;
-  height: 50vh;
-}
-
-
-
-
-
-.texto3 {
-  width: 80%;
-  align-self: center;
-  text-align: center;
-  margin-top: 20px;
-  font-size: 28px;
-}
-
-#projects-card {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-
 
 /* Waves */
 .custom-shape-divider-bottom-1686795682 {
