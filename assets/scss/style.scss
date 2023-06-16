@@ -2,11 +2,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-  
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Eczar', serif;
+/* 
+  font-family: 'Eczar', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif; */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,500&family=Source+Sans+Pro:wght@200;300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;700;800&family=Montserrat:wght@500&family=Poppins:wght@100;200;300;400;500&display=swap');
 
 /* Components*/
 @import "./services.scss";
