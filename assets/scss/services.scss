@@ -42,7 +42,10 @@
 }
 
 .services {
-  background: grey;
+  background: url(https://wallpapercave.com/wp/wp9373958.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   @media (max-width: 1500px) {
    padding: 100px 4% 120px !important;
