@@ -117,10 +117,10 @@ form textarea {
 }
 
 
-.contact-us{
- h3{
-  font-size: 28px;
- }
+.contact-us {
+  h3 {
+    font-size: 28px;
+  }
 }
 
 /* 
@@ -153,24 +153,24 @@ form textarea {
   overflow: hidden;
   cursor: pointer;
   transition: .5s;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
   border: 1px solid;
   font-family: inherit;
-  text-transform: uppercase;
   color: white;
   z-index: 1;
   display: flex;
   align-items: center;
-  
-  i{
+
+  i {
     font-size: 30px;
     margin-bottom: 4px;
     margin-left: 5px;
   }
- }
- 
- .botao-contato::before, .botao-contato::after {
+}
+
+.botao-contato::before,
+.botao-contato::after {
   content: '';
   display: block;
   width: 50px;
@@ -181,28 +181,104 @@ form textarea {
   z-index: -1;
   background-color: #17a900;
   transition: 1s ease;
- }
- 
- .botao-contato::before {
+}
+
+.botao-contato::before {
   top: -1em;
   left: -1em;
- }
- 
- .botao-contato::after {
+}
+
+.botao-contato::after {
   left: calc(100% + 1em);
   top: calc(100% + 1em);
- }
- 
- .botao-contato:hover::before, .botao-contato:hover::after {
+}
+
+.botao-contato:hover::before,
+.botao-contato:hover::after {
   height: 410px;
   width: 410px;
- }
- 
- .botao-contato:hover {
+}
+
+.botao-contato:hover {
   color: white;
- }
- 
- .botao-contato:active {
+}
+
+.botao-contato:active {
   filter: brightness(.8);
- }
- 
+}
+
+.buttons-contact-main{
+  display: flex;
+  gap: 10px;
+}
+
+
+/* Footer */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+footer {
+  background-color: #323232;
+}
+
+.fc-info {
+  width: 33%;
+
+  h2 {
+    margin: 20px 0;
+    font-size: 76px;
+    font-weight: 900;
+    line-height: 0.8;
+    color: white;
+  }
+  
+  p{
+    margin-top: 20px;
+    color: #5a5e64;
+  }
+}
+
+.fc-contact{
+  h4{
+    font-size: 26px;
+    color: white;
+  }
+}
+
+.fc-contact-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.fc-contact-list i {
+  font-size: 24px;
+  color: white;
+  margin-right: 10px;;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.fc-contact-list p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+
+  a {
+    width: auto;
+    color: white;
+    transition: all .45s ease;
+  }
+}
+
+.contact-icons{
+  h4{
+    font-size: 26px;
+    color: white;
+  }
+}
